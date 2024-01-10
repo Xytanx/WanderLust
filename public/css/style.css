@@ -117,3 +117,8 @@ body {
     padding-right: 0;
 }
 
+/* MAP */
+#map {
+    height: 400px;
+    width: 400px;
+}

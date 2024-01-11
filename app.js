@@ -51,6 +51,10 @@ store.on("error", ()=>{
     console.log("ERROR in Mongo Session store", err);
 });
 
+app.get("/", (req, res)=>{
+    res.redirect("/listings");
+});
+
 const sessionOptions = {
     store,
     secret: process.env.SECRET,
